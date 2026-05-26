@@ -1,0 +1,10 @@
+nohup: ignorando entrada
+remote: error: Trace: 73e388948bdf597f0d640bd183d03185a1bf49b779150475ff22c76dcd0cda6c        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File images/myext4image4k.img is 512.00 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File images/myext4image1k.img is 128.00 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File images/myext4image2k.img is 256.00 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/Walancy/sistema-de-arquivos-ext4.git
+ ! [remote rejected] white -> white (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/Walancy/sistema-de-arquivos-ext4.git'
