@@ -1,18 +1,65 @@
-Como usar ext4checksum.h e ext4checksum.cc
+# EXT4 Checksum Project
 
-O arquivo test_crc.cc contém os exemplos de como realizar as chamadas dos checksums.
+Este repositório contém uma implementação de checksum para estruturas EXT4 em C++, além de um programa de teste para validar as funções de checksum.
 
--- Instalação (LINUX):
+Também inclui a documentação do projeto em PDF (`bcc5002-so-projeto-ext4.pdf`).
 
-# sudo apt install libcrypto++-dev
+## Estrutura do repositório
 
--- Compilação
+- `ext4checksum.cc` - implementação principal do checksum EXT4
+- `ext4checksum.h` - cabeçalho com assinaturas e definições
+- `test_crc.cc` - exemplo de uso e teste do checksum
+- `test_crc` - binário de teste gerado
+- `resources/` - arquivos de apoio do projeto
+- `README` - documentação do projeto
+- `bcc5002-so-projeto-ext4.pdf` - relatório do projeto
 
-# g++ -c ext4checksum.cc
-# g++ test_crc.cc ext4checksum.o -o test_crc -lcryptopp
+## Requisitos
 
--- Execução
-#./test_crc
+- Linux
+- Compilador C++ compatível (ex: `g++`)
+- Biblioteca Crypto++ de desenvolvimento
+
+## Instalação
+
+```bash
+sudo apt install libcrypto++-dev
+```
+
+## Compilação
+
+```bash
+g++ -c ext4checksum.cc
+g++ test_crc.cc ext4checksum.o -o test_crc -lcryptopp
+```
+
+## Execução
+
+```bash
+./test_crc
+```
+
+## Uso
+
+1. Compile os arquivos conforme descrito acima.
+2. Execute `./test_crc` para validar o checksum e verificar o comportamento do código.
+
+## Sobre o projeto
+
+O objetivo principal deste projeto é demonstrar manipulação de estruturas EXT4 e cálculo de checksums em C++.
+
+Este repositório também está preparado para desenvolvimento adicional do projeto EXT4, seguindo os requisitos do trabalho acadêmico.
+
+## Contribuição
+
+- Use `git` para versionar alterações.
+- Mantenha o código organizado e com comentários claros.
+- Atualize o `README` sempre que novas funcionalidades forem adicionadas.
+
+## Observações
+
+- O arquivo `bcc5002-so-projeto-ext4.pdf` contém as especificações do projeto e pode ser usado como referência.
+- Arquivos grandes do projeto não devem ser enviados via GitHub sem uso de Git LFS.
 
 
 
